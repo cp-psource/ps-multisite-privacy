@@ -79,7 +79,7 @@ Alle Webseiten aktualisieren wurde entwickelt, um die Datenschutzeinstellungen a
 2.  Wähle nicht „Alle Blogs aktualisieren“, wenn Du nur möchtest, dass die neuen Datenschutzvorgaben für alle neu erstellten Webseiten gelten..
 3.  "Alle Websiten aktualisieren" aktualisiert nicht die Datenschutzeinstellungen der Hauptseite. Dies liegt daran, dass es üblich ist, die Hauptwebsite auf "Alle Besucher für alle Blogs zulassen" festzulegen, damit Du Community-Support und Hilfe auf der Hauptwebseite bereitstellen kannst. Um die Datenschutzeinstellungen der Hauptseite zu ändern, musst Du im Webseiten-Admin-Dashboard der Hauptseite zu Einstellungen > Lesen gehen.
 
-### Ändern der Datenschutzeinstellungen auf einer Website-für-Webseite-Basis
+### Ändern der Datenschutzeinstellungen auf einer Webseite-für-Webseite-Basis
 
 Du kannst den Datenschutz einer Webseite ändern, indem Du: 
 1.  beim Webseiten-Admin-Dashboard der Webseite anmeldest 
