@@ -11,9 +11,8 @@ License: GNU General Public License (Version 2 - GPLv2)
 */
 
 /*
-Copyright 2020 WMS N@W (https://n3rds.work)
+Copyright 2020-2023 WMS N@W (https://n3rds.work)
 Author - DerN3rd
-Contributors - Ivan Shaovchev, Andrew Billits, Andrey Shipilov, S H Mohanjith
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
@@ -147,23 +146,23 @@ function spo_is_mobile_app() {
         return false;
     }
 
-    //WordPress for iOS
+    //ClassicPress for iOS
     if ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-iphone' ) !== false ) {
         return true;
     }
-    //WordPress for Android
+    //ClassicPress for Android
     elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-android' ) !== false ) {
         return true;
     }
-    //WordPress for Windows Phone 7
+    //ClassicPress for Windows Phone 7
     elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-windowsphone' ) !== false ) {
         return true;
     }
-    //WordPress for Nokia
+    //ClassicPress for Nokia
     elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-nokia' ) !== false ) {
         return true;
     }
-    //WordPress for Blackberry
+    //ClassicPress for Blackberry
     elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-blackberry' ) !== false ) {
         return true;
     }
@@ -922,13 +921,11 @@ function additional_privacy_site_admin_options() {
     </table>
     <?php
 }
-
-require 'external/plugin-update-checker/plugin-update-checker.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+require 'psource/psource-plugin-update/psource-plugin-updater.php';
+use Psource\PluginUpdateChecker\v5\PucFactory;
+$MyUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=ps-multisite-privacy', 
 	__FILE__, 
 	'ps-multisite-privacy' 
 );
-
-
 ?>
