@@ -1,16 +1,15 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PS Multisite Privatsphäre\n"
 "POT-Creation-Date: 2023-03-16 11:39+0100\n"
-"PO-Revision-Date: 2023-03-16 11:39+0100\n"
+"PO-Revision-Date: 2023-03-16 10:52+0000\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: English (United States)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: sitewide-privacy-options.php\n"
@@ -20,31 +19,34 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en_US\n"
+"X-Loco-Version: 2.6.3; wp-4.9.22"
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:56
 msgid "View details"
-msgstr ""
+msgstr "View details"
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:79
 #, php-format
 msgid "Weitere Informationen zu %s"
-msgstr ""
+msgstr "More information about %s"
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:130
 msgid "Auf neuere Version prüfen"
-msgstr ""
+msgstr "Check for newer version"
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:217
 #, php-format
 msgctxt "the plugin title"
 msgid "Keine neuere Version von %s im PSOURCE REPO gefunden."
-msgstr ""
+msgstr "No newer version of %s found in PSOURCE REPO."
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:219
 #, php-format
 msgctxt "the plugin title"
 msgid "Im PSOURCE REPO ist eine <b>neuere Version von %s</b> verfügbar!."
-msgstr ""
+msgstr "A <b>newer version of %s</b> is available in the PSOURCE REPO!."
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:221
 #, php-format
@@ -53,41 +55,42 @@ msgid ""
 "Entschuldige, es konnte nicht festgestellt werden, ob Updates für %s "
 "verfügbar sind."
 msgstr ""
+"Sorry, it could not be determined whether updates for %s are available."
 
 #: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:227
 #, php-format
 msgid "Unbekannter PSOURCE-UPDATER-Status \"%s\" \"%s\""
-msgstr ""
+msgstr "Unknown PSOURCE UPDATER status \"%s\" \"%s\""
 
 #: psource/psource-plugin-update/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
 msgid "Ein Änderungsprotokoll ist nicht verfügbar."
-msgstr ""
+msgstr "A change log is not available."
 
 #: sitewide-privacy-options.php:102
 msgid "Füge den Seiten hinzu, Bitte warte einen Moment..."
-msgstr ""
+msgstr "Adding to the pages, please wait a moment..."
 
 #: sitewide-privacy-options.php:104
 #, php-format
 msgid ""
 "<span id=\"sbe-update-network-count\">%d</span> von %d Seiten aktualisiert"
-msgstr ""
+msgstr "<span id=\"sbe-update-network-count\">%d</span> updated %d pages"
 
 #: sitewide-privacy-options.php:188 sitewide-privacy-options.php:736
 msgid "Benutzer > Alle Benutzer"
-msgstr ""
+msgstr "Users > All Users"
 
 #: sitewide-privacy-options.php:204
 msgid "Privacy:"
-msgstr ""
+msgstr "Privacy:"
 
 #: sitewide-privacy-options.php:207
 msgid "Public"
-msgstr ""
+msgstr "Public"
 
 #: sitewide-privacy-options.php:212
 msgid "Suchmaschine blockiert"
-msgstr ""
+msgstr "Search engine blocked"
 
 #: sitewide-privacy-options.php:218 sitewide-privacy-options.php:753
 #, php-format
@@ -95,6 +98,7 @@ msgid ""
 "Besucher müssen sich anmelden - jeder, der ein registrierter Benutzer von %s "
 "ist, kann Zugriff erhalten."
 msgstr ""
+"Visitors must login - anyone who is a registered user of %s can gain access."
 
 #: sitewide-privacy-options.php:225
 #, php-format
@@ -102,74 +106,86 @@ msgid ""
 "Nur registrierte Benutzer dieser Websites können Zugriff haben - jeder, der "
 "unter %s gefunden wird, kann Zugriff haben."
 msgstr ""
+"Only registered users of these websites can have access - anyone found under "
+"%s can have access."
 
 #: sitewide-privacy-options.php:232 sitewide-privacy-options.php:765
 msgid ""
 "Nur Administratoren können besuchen - gut zu Testzwecken, bevor es live "
 "geschaltet wird."
-msgstr ""
+msgstr "Only admins can visit - good for testing purposes before going live."
 
 #: sitewide-privacy-options.php:253 sitewide-privacy-options.php:784
 msgid "Jeder Besucher muss zuerst dieses Passwort angeben:"
-msgstr ""
+msgstr "A <b>newer version of %s</b> is available in the PSOURCE REPO!."
 
 #: sitewide-privacy-options.php:258
 msgid ""
 "Hinweis: Jeder, der ein registrierter Benutzer dieser Seite ist, benötigt "
 "dieses Passwort nicht."
 msgstr ""
+"Note: Anyone who is a registered user of this site does not need this "
+"password."
 
 #: sitewide-privacy-options.php:320
 msgid "<strong>FEHLER</strong>: Falsches Passwort"
-msgstr ""
+msgstr "<strong>ERROR</strong>: Wrong password"
 
 #: sitewide-privacy-options.php:328
 msgid ""
 "<strong>Erlaubnis benötigt</strong>: Für diesen Blog ist ein Passwort "
 "erforderlich, um ihn anzuzeigen."
 msgstr ""
+"<strong>Permission Required</strong>: This blog requires a password to view."
 
 #: sitewide-privacy-options.php:353
 msgid ""
 "<strong>Erlaubnis benötigt</strong>: Dieser Blog darf nur angemeldeten "
 "Benutzern angezeigt werden."
 msgstr ""
+"<strong>Permission required</strong>: This blog may only be viewed by "
+"registered users."
 
 #: sitewide-privacy-options.php:355
 msgid ""
 "<strong>Erlaubnis benötigt</strong>: Dieser Blog darf nur Benutzern "
 "angezeigt werden, die diesen Blog abonniert haben."
 msgstr ""
+"<strong>Permission required</strong>: This blog may only be viewed by users "
+"who have subscribed to this blog."
 
 #: sitewide-privacy-options.php:357
 msgid ""
 "<strong>Erlaubnis benötigt</strong>: Dieser Blog darf nur Administratoren "
 "angezeigt werden."
 msgstr ""
+"<strong>Permission required</strong>: This blog may only be viewed by "
+"administrators."
 
 #: sitewide-privacy-options.php:383
 msgid "Oder melden Dich hier an, wenn Du einen Benutzernamen hast"
-msgstr ""
+msgstr "Or log in here if you have a username"
 
 #: sitewide-privacy-options.php:660 sitewide-privacy-options.php:699
 msgid "Seiten-Zugriff verweigert"
-msgstr ""
+msgstr "Page access denied"
 
 #: sitewide-privacy-options.php:702
 msgid ""
 "Diese Seite darf nur Benutzern angezeigt werden, die diese Seite abonniert "
 "haben."
 msgstr ""
+"This page may only be viewed by users who have subscribed to this page."
 
 #: sitewide-privacy-options.php:704
 msgid "Diese Seite darf nur Administratoren angezeigt werden."
-msgstr ""
+msgstr "This page may only be viewed by administrators."
 
 #: sitewide-privacy-options.php:726
 msgid ""
 "Um die zusätzlichen Datenschutzoptionen zu nutzen, aktualisiere bitte auf "
 "LEVEL &#187;"
-msgstr ""
+msgstr "To use the additional privacy options, please upgrade to LEVEL &#187;"
 
 #: sitewide-privacy-options.php:759
 #, php-format
@@ -177,68 +193,74 @@ msgid ""
 "Nur registrierte Benutzer dieses Blogs können Zugriff haben - jeder, der "
 "unter %s gefunden wird, kann Zugriff haben."
 msgstr ""
+"Only registered users of this blog can have access - anyone found under %s "
+"can have access."
 
 #: sitewide-privacy-options.php:788
 msgid ""
 "Hinweis: Jeder, der ein registrierter Benutzer dieses Blogs ist, benötigt "
 "dieses Passwort nicht."
 msgstr ""
+"Note: Anyone who is a registered user of this blog does not need this "
+"password."
 
 #: sitewide-privacy-options.php:836
 msgid "Privatsphäreeinstellungen der Website"
-msgstr ""
+msgstr "Website Privacy Settings"
 
 #: sitewide-privacy-options.php:839
 msgid "Privatsphäreoptionen bei der Anmeldung anzeigen"
-msgstr ""
+msgstr "Show privacy options at login"
 
 #: sitewide-privacy-options.php:842 sitewide-privacy-options.php:852
 #: sitewide-privacy-options.php:903
 msgid "Ja"
-msgstr ""
+msgstr "Yes"
 
 #: sitewide-privacy-options.php:844 sitewide-privacy-options.php:854
 #: sitewide-privacy-options.php:906
 msgid "Nein"
-msgstr ""
+msgstr "No"
 
 #: sitewide-privacy-options.php:849
 msgid "Stelle diese Funktionalität nur Pro-Blog Abonennten zur Verfügung"
-msgstr ""
+msgstr "Only make this functionality available to Pro-Blog subscribers"
 
 #: sitewide-privacy-options.php:859
 msgid "Verfügbare Optionen"
-msgstr ""
+msgstr "Available options"
 
 #: sitewide-privacy-options.php:863 sitewide-privacy-options.php:888
 msgid "Erlaube nur angemeldeten Benutzern, alle Webseiten zu sehen."
-msgstr ""
+msgstr "Allow only logged in users to see all websites."
 
 #: sitewide-privacy-options.php:867
 msgid ""
 "Erlaube einem registrierten Benutzer nur Seiten zu sehen für die er "
 "registriert ist."
-msgstr ""
+msgstr "Allow a registered user to only see pages they are registered for."
 
 #: sitewide-privacy-options.php:871 sitewide-privacy-options.php:894
 msgid ""
 "Erlaube nur Administratoren einer Seite, die Seite anzuzeigen, für die sie "
 "Administrator sind."
-msgstr ""
+msgstr "Allow only admins of a Page to view the Page they are admins of."
 
 #: sitewide-privacy-options.php:875
 msgid ""
 "Ermögliche Netzwerkadministratoren, ein einzelnes Kennwort festzulegen, das "
 "alle Besucher verwenden müssen, um die Seite anzuzeigen."
 msgstr ""
+"Allow network admins to set a single password that all visitors must use to "
+"view the site."
 
 #: sitewide-privacy-options.php:880
 msgid "Voreinstellung"
-msgstr ""
+msgstr "Preset"
 
 #: sitewide-privacy-options.php:882
 msgid "Erlaube allen Besuchern aller Seiten."
-msgstr ""
+msgstr "Allow all visitors of all pages."
 
 #: sitewide-privacy-options.php:884
 msgid ""
@@ -246,24 +268,31 @@ msgid ""
 "(wie Google, Sphere, Technorati), Archivierer und alle öffentlichen Einträge "
 "auf Deiner Website."
 msgstr ""
+"This will make all websites visible to everyone, including search engines "
+"(like Google, Sphere, Technorati), archivers and any public listings on your "
+"site."
 
 #: sitewide-privacy-options.php:886
 msgid ""
 "Blockiere Suchmaschinen von allen Webseiten, aber lasse normale Besucher "
 "alle Websites sehen."
 msgstr ""
+"Block search engines from all websites, but let normal visitors see all "
+"websites."
 
 #: sitewide-privacy-options.php:890
 msgid ""
 "Erlaube einem registrierten Benutzer nur, eine Seite zu sehen, für die er "
 "registriert ist."
-msgstr ""
+msgstr "Only allow a registered user to see a page they are registered for."
 
 #: sitewide-privacy-options.php:892
 msgid ""
 "Selbst wenn ein Benutzer angemeldet ist, muss er Benutzer der einzelnen "
 "Seite sein, um sie sehen zu können."
 msgstr ""
+"Even if a user is logged in, they must be a user of the individual page to "
+"see it."
 
 #: sitewide-privacy-options.php:896
 msgid ""
@@ -271,10 +300,12 @@ msgid ""
 "Privatsphäreeinstellungen. (<em>Hinweis:</em> \"Netzwerkadministrator\", "
 "nicht ein individueller Seitenadministrator.)"
 msgstr ""
+"A network administrator can always view any page, regardless of privacy "
+"settings. (<em>Note:</em> \"Network admin\", not an individual Site admin.)"
 
 #: sitewide-privacy-options.php:900
 msgid "Erlaube Überschreiben"
-msgstr ""
+msgstr "Allow overwrite"
 
 #: sitewide-privacy-options.php:908
 msgid ""
@@ -282,21 +313,25 @@ msgid ""
 "Seite(n) zu ändern. Beachte dass Netzwerkadministratoren die "
 "Privatsphäreoptionen der Webseite immer bearbeiten können."
 msgstr ""
+"Allow site admins to change the privacy settings for their site(s). Note "
+"that network administrators can always edit the website's privacy options."
 
 #: sitewide-privacy-options.php:913
 msgid "Aktualisiere alle Seiten"
-msgstr ""
+msgstr "Refresh all Sites"
 
 #: sitewide-privacy-options.php:917
 msgid ""
-"Aktualisiert alle Webseiten mit der Standardeinstellung für die "
-"Privatsphäre. Die Hauptseite wird nicht aktualisiert. Bitte habe etwas "
-"Geduld, da dies einige Minuten dauern kann."
+"Aktualisiert alle Webseiten mit der Standardeinstellung für die Privatsphäre."
+" Die Hauptseite wird nicht aktualisiert. Bitte habe etwas Geduld, da dies "
+"einige Minuten dauern kann."
 msgstr ""
+"Refreshes all websites with the default privacy setting. The main page is "
+"not updated. Please be patient as this may take a few minutes."
 
 #. Plugin Name of the plugin/theme
 msgid "PS Multisite Privatsphäre"
-msgstr ""
+msgstr "PS Multisite privacy"
 
 #. Plugin URI of the plugin/theme
 msgid "https://n3rds.work/piestingtal_source/ps-multisite-privatsphaere/"
@@ -307,11 +342,13 @@ msgid ""
 "Fügt mehr Datenschutz hinzu und ermöglicht es, diese auf allen Websites zu "
 "steuern - oder Benutzern zu erlauben, sie zu überschreiben."
 msgstr ""
+"Adds more privacy and lets you control it across sites - or allow users to "
+"override it."
 
 #. Author of the plugin/theme
 msgid "WMS N@W"
-msgstr ""
+msgstr "WMS N@W"
 
 #. Author URI of the plugin/theme
 msgid "https://n3rds.work"
-msgstr ""
+msgstr "https://n3rds.work"

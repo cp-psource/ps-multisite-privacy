@@ -6,6 +6,8 @@ Description: Fügt mehr Datenschutz hinzu und ermöglicht es, diese auf allen We
 Author: WMS N@W
 Author URI: https://n3rds.work
 Version: 1.2.1
+Text Domain: sitewide-privacy-options
+Domain Path: languages
 Network: true
 License: GNU General Public License (Version 2 - GPLv2)
 */
