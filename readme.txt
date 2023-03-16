@@ -4,7 +4,7 @@ Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free
 Tags: multisite, suche, netzwerksuche
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -121,16 +121,11 @@ You can change a website's privacy policy by:
 
 
 [Projektseite](https://n3rds.work/cp_psource/psource-plugin)
-[Supportforum](https://n3rds.work/forum/psource-plugin)
-[GitHub](https://github.com/cp-psource/psource-plugin)
+[Supportforum](https://n3rds.work/forum/multisite-privatsphre-supportforum/)
+[GitHub](https://github.com/cp-psource/ps-multisite-privacy)
 
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/cp-powersource/)
 
-
-[Projektseite](https://n3rds.work/piestingtal_source/ps-multisite-privatsphaere/)
-[Handbuch](https://n3rds.work/docs/ps-multisite-privatsphaere-handbuch/)
-[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-multisite-privatsphaere-supportforum/)
-[GitHub](https://github.com/piestingtal-source/ps-multisite-privacy)
 
 == Languages ==
 
@@ -178,11 +173,17 @@ Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/
 
 == ChangeLog ==
 
-= 1.2.1 = DerN3rd =
+= 1.2.2 =
+
+* English Translations
+* Updater v1.2
+* New Links
+
+= 1.2.1 =
 
 * Public release
 
-= 1.2.0 = DerN3rd =
+= 1.2.0 =
 
 * Fix depracated-create_function
 * Übersetzt

@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: PS Multisite Privatsphäre
-Plugin URI: https://n3rds.work/piestingtal_source/ps-multisite-privatsphaere/
+Plugin URI: https://n3rds.work/cp_psource/ps-multisite-privatsphaere/
 Description: Fügt mehr Datenschutz hinzu und ermöglicht es, diese auf allen Websites zu steuern - oder Benutzern zu erlauben, sie zu überschreiben.
 Author: WMS N@W
 Author URI: https://n3rds.work
-Version: 1.2.1
+Version: 1.2.2
 Text Domain: sitewide-privacy-options
 Domain Path: languages
 Network: true

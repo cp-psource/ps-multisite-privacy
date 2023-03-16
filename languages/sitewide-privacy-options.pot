@@ -299,7 +299,7 @@ msgid "PS Multisite Privatsphäre"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://n3rds.work/piestingtal_source/ps-multisite-privatsphaere/"
+msgid "https://n3rds.work/cp_psource/ps-multisite-privatsphaere/"
 msgstr ""
 
 #. Description of the plugin/theme
