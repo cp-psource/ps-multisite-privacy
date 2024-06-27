@@ -37,9 +37,9 @@ require 'psource/psource-plugin-update/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
  
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/cp-psource/ps-post-ads',
+	'https://github.com/cp-psource/ps-multisite-privacy',
 	__FILE__,
-	'ps-post-ads'
+	'ps-multisite-privacy'
 );
  
 //Set the branch that contains the stable release.
