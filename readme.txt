@@ -1,6 +1,5 @@
 === PS Multisite Privatsphäre ===
-Contributors: DerN3rd (WMS N@W)
-Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
+Contributors: DerN3rd (PSOURCE)
 Tags: multisite, suche, netzwerksuche
 Requires at least: 4.9
 Tested up to: 4.9
@@ -120,11 +119,10 @@ You can change a website's privacy policy by:
 4. Click **Save Changes**.
 
 
-[Projektseite](https://n3rds.work/cp_psource/psource-plugin)
-[Supportforum](https://n3rds.work/forum/multisite-privatsphre-supportforum/)
+[Projektseite](https://cp-psource.github.io/ps-multisite-privacy/)
 [GitHub](https://github.com/cp-psource/ps-multisite-privacy)
 
-[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/cp-powersource/)
+[POWERED BY PSOURCE](https://github.com/cp-psource)
 
 
 == Languages ==
