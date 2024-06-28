@@ -6,7 +6,7 @@
   <a href="https://github.com/cp-psource/ps-multisite-privacy/wiki" style="text-decoration: none; color: #0366d6; font-weight: bold;">Docs</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
-  <a href="https://github.com/cp-psource/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a> 
+  <a href="https://cp-psource.github.io/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a> 
 </div>
 
 ## Multisite Privacy fügt netzwerkweite Datenschutzebenen hinzu und ermöglicht Dir zu entscheiden, ob Benutzer diese außer Kraft setzen können.
@@ -107,7 +107,7 @@ Du kannst die Datenschutzeinstellungen einer Webseite wie folgt ändern:
   <a href="https://github.com/cp-psource/ps-multisite-privacy/wiki" style="text-decoration: none; color: #0366d6; font-weight: bold;">Docs</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
-  <a href="https://github.com/cp-psource/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a> 
+  <a href="https://cp-psource.github.io/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a> 
 </div>
 
 <div>
