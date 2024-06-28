@@ -17,7 +17,7 @@ This plugin gives you full control over privacy on your network.
 
 ##### It’s everything you'll need, plus a whole lot more:
 
-*   Adds four new privacy options to Settings > Privacy in the site admin dashboard.
+*   Adds four new privacy options to **Settings > Privacy** in the site admin dashboard.
 *   Choice of which privacy options are made available to your users!
 *   Hassle free interface.  Changing privacy across your network is as simple as updating your settings in the network admin dashboard.
 *   Ability to let users select their preferred privacy option when signing up for their new site.
