@@ -99,3 +99,15 @@ Du kannst die Datenschutzeinstellungen einer Webseite wie folgt ändern:
 ![image](images/privacy64.jpg)
 
  Ändern der Privatsphäre im Webseiten-Admin-Dashboard
+
+<div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
+  <a href="https://cp-psource.github.io/ps-multisite-privacy/" style="text-decoration: none; color: #0366d6; font-weight: bold;">Home</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/releases" style="text-decoration: none; color: #0366d6; font-weight: bold;">Downloads</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/wiki" style="text-decoration: none; color: #0366d6; font-weight: bold;">Docs</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a> 
+</div>
+
+<div>
+ <a href="https://github.com/cp-psource">Copyright PSOURCE 2024</a>
+</div>
