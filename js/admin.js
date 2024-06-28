@@ -1,13 +1,13 @@
 jQuery(document).ready(
     function () {
-        jQuery('input[name=registration]').click(function() {
+        jQuery('input[name=registration]').on('click', function() {
             if (jQuery('#registration3:checked').length > 0 || jQuery('#registration4:checked').length > 0) {
                 jQuery('#sitewide_privacy_signup_options_yes').parent().parent().parent().show();
             } else {
                 jQuery('#sitewide_privacy_signup_options_no').parent().parent().parent().hide();
             }
         });
-        jQuery('input[name=sitewide_privacy_signup_options]').click(function() {
+        jQuery('input[name=sitewide_privacy_signup_options]').on('click', function() {
             if (jQuery('#sitewide_privacy_signup_options_yes:checked').length > 0) {
                 jQuery('#sitewide_privacy_pro_only_row').hide();
             } else {

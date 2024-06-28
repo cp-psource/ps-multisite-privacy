@@ -44,7 +44,6 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
  
 //Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
-
 /**
  * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
  **/
@@ -60,12 +59,8 @@ add_action('admin_menu', 'additional_privacy_modify_menu_items', 99);
 add_action('wpmu_new_blog', 'additional_privacy_set_default', 100, 2);
 add_action('admin_enqueue_scripts', 'additional_privacy_admin_enqueue_scripts');
 add_action('admin_init', 'additional_privacy_admin_init');
+add_action('wp_loaded', 'additional_privacy');
 
-if ( spo_is_mobile_app() ) {
-    add_action('template_redirect', 'additional_privacy');
-} else {
-    add_action('wp_loaded', 'additional_privacy');
-}
 
 add_action('init', 'additional_privacy_init');
 
@@ -105,46 +100,48 @@ function additional_privacy_blog_public($value) {
 }
 
 function additional_privacy_admin_init() {
+    ob_start(); // Startet Output Buffering
+    
     wp_register_script('additional_privacy_admin_js', plugins_url('js/admin.js', __FILE__), array('jquery'));
 
-    if ( isset($_COOKIE['privacy_update_all_blogs']) && $_COOKIE['privacy_update_all_blogs'] == 1 )  {
+    if (isset($_COOKIE['privacy_update_all_blogs']) && $_COOKIE['privacy_update_all_blogs'] == 1) {
         global $wpdb, $site_id;
         $blog_count = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) as count FROM $wpdb->blogs WHERE blog_id != '1' AND site_id = '%d' AND deleted = 0 AND spam = 0;", $site_id));
         if ($blog_count > 0) {
-            $blogs_completed = isset($_REQUEST['offset'])?intval($_REQUEST['offset']):0;
+            $blogs_completed = isset($_REQUEST['offset']) ? intval($_REQUEST['offset']) : 0;
             $blog_limit = 2;
-            $blogs = $wpdb->get_results( $wpdb->prepare("SELECT blog_id FROM $wpdb->blogs WHERE blog_id != '1' AND site_id = '%d' AND deleted = 0 AND spam = 0 ORDER BY blog_id LIMIT %d, %d;", $site_id, $blogs_completed, $blog_limit), ARRAY_A );
-            if ( count( $blogs ) > 0 ) {
-                ?>
-                <h2><?php _e('Applying to sites, please wait...', 'sitewide-privacy-options'); ?></h2>
-                <?php
-                echo sprintf(__('<span id="sbe-update-network-count">%d</span> of %d sites updated', 'sitewide-privacy-options'), $blogs_completed, $blog_count);
+            $blogs = $wpdb->get_results($wpdb->prepare("SELECT blog_id FROM $wpdb->blogs WHERE blog_id != '1' AND site_id = '%d' AND deleted = 0 AND spam = 0 ORDER BY blog_id LIMIT %d, %d;", $site_id, $blogs_completed, $blog_limit), ARRAY_A);
+            if (count($blogs) > 0) {
                 $privacy_default = get_site_option('privacy_default');
                 if (empty($privacy_default) || $privacy_default == "00") {
                     $privacy_default = "0";
                 }
-                ?>
-                <script type="text/javascript">
-                <?php
-                foreach ( $blogs as $blog ) {
+
+                foreach ($blogs as $blog) {
                     $blogs_completed++;
                     update_blog_option($blog['blog_id'], "blog_public", $privacy_default);
-                    echo "document.getElementById('sbe-update-network-count').innerHTML='{$blogs_completed}';";
                 }
-                ?>
-                        window.location ='<?php echo ($blog_count > $blogs_completed)?
-                            network_admin_url('settings.php?privacy_update_all_blogs=step&offset='.($blogs_completed)):
-                            network_admin_url('settings.php?privacy_update_all_blogs=complete&message=blog_settings_updated&offset='.$blogs_completed); ?>';
 
-                        document.cookie="privacy_update_all_blogs=<?php echo ($blog_count > $blogs_completed)?1:0; ?>";
+                setcookie("privacy_update_all_blogs", $blog_count > $blogs_completed ? 1 : 0);
+
+                echo '<h2>' . __('Applying to sites, please wait...', 'sitewide-privacy-options') . '</h2>';
+                echo sprintf(__('<span id="sbe-update-network-count">%d</span> of %d sites updated', 'sitewide-privacy-options'), $blogs_completed, $blog_count);
+                ?>
+                <script type="text/javascript">
+                    document.getElementById('sbe-update-network-count').innerHTML = '<?php echo $blogs_completed; ?>';
+                    window.location = '<?php echo ($blog_count > $blogs_completed) ?
+                        network_admin_url('settings.php?privacy_update_all_blogs=step&offset=' . $blogs_completed) :
+                        network_admin_url('settings.php?privacy_update_all_blogs=complete&message=blog_settings_updated&offset=' . $blogs_completed); ?>';
                 </script>
                 <?php
+                ob_end_flush(); // Flushed Output Buffer
                 exit();
             }
         } else {
             setcookie('privacy_update_all_blogs', "0");
         }
     }
+    ob_end_flush(); // Flushed Output Buffer
 }
 
 function additional_privacy_admin_enqueue_scripts($hook) {
@@ -152,42 +149,6 @@ function additional_privacy_admin_enqueue_scripts($hook) {
         wp_enqueue_script('additional_privacy_admin_js');
     }
 }
-
-/**
- * check that it is mobile app
- */
-function spo_is_mobile_app() {
-
-    // Early exit if $_SERVER['HTTP_USER_AGENT'] is not set
-    if ( ! isset( $_SERVER['HTTP_USER_AGENT'] ) ) {
-        return false;
-    }
-
-    //WordPress for iOS
-    if ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-iphone' ) !== false ) {
-        return true;
-    }
-    //WordPress for Android
-    elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-android' ) !== false ) {
-        return true;
-    }
-    //WordPress for Windows Phone 7
-    elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-windowsphone' ) !== false ) {
-        return true;
-    }
-    //WordPress for Nokia
-    elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-nokia' ) !== false ) {
-        return true;
-    }
-    //WordPress for Blackberry
-    elseif ( stripos( $_SERVER['HTTP_USER_AGENT'], 'wp-blackberry' ) !== false ) {
-        return true;
-    }
-
-    //not mobile app
-    return false;
-}
-
 
 function new_privacy_options_on_signup() {
     if ( get_site_option('privacy_override') != 'yes' ) {
@@ -198,11 +159,11 @@ function new_privacy_options_on_signup() {
     if (!$blog_public) {
         $blog_public = get_option('blog_public');
     }
-    $text_network_name      = get_site_option( 'site_name' );
+    $text_network_name = get_site_option( 'site_name' );
     if (!$text_network_name) {
         $text_network_name = 'site';
     }
-    $text_all_user_link     = '<a href="'. admin_url(). 'users.php">'.__('Users > All Users', 'sitewide-privacy-options').'</a>';
+    $text_all_user_link = '<a href="'. admin_url(). 'users.php">'.__('Users > All Users', 'sitewide-privacy-options').'</a>';
 
     $default_available = array(
         'private'       => '1',
@@ -256,7 +217,7 @@ function new_privacy_options_on_signup() {
                     jQuery( "#blog_public_on" ).attr('disabled', true);
                     jQuery( "#blog_public_off" ).attr('disabled', true);
 
-                    jQuery( "input[name='new_blog_public']" ).change( function() {
+                    jQuery( "input[name='new_blog_public']" ).on('change', function() {
                         if ( '-4' == jQuery( this ).val() )
                             jQuery( "#blog_pass" ).attr( "readonly", false );
                         else
@@ -407,7 +368,7 @@ function single_password_template( $page ) {
                     return true;
                 });
 
-                jQuery( '#loginform4' ).change( function() {
+                jQuery( '#loginform4' ).on('change', function() {
                     jQuery( '#blog_pass' ).css( 'border-color', '' );
                 });
 
@@ -528,6 +489,8 @@ function spo_redirect($url) {
 }
 
 function additional_privacy() {
+    ob_start(); // Startet Output Buffering
+    
     global $blog_id, $user_id, $current_blog, $wp, $dm_map;
 
     if ( $current_blog->public == '-4' && !is_user_logged_in() && isset( $_GET['privacy'] ) && '4' == $_GET['privacy'] ) {
@@ -594,8 +557,8 @@ function additional_privacy() {
             }
             //single password
             case '-4': {
-                $spo_settings           = get_option( 'spo_settings' );
-                $value                  = wp_hash( get_current_blog_id() . $spo_settings['blog_pass'] . 'blogaccess yes' );
+                $spo_settings = get_option( 'spo_settings' );
+                $value = wp_hash( get_current_blog_id() . $spo_settings['blog_pass'] . 'blogaccess yes' );
 
                 if ( !current_user_can( 'read' ) ) {
                     if ( !isset( $_COOKIE['spo_blog_access'] ) || $value != $_COOKIE['spo_blog_access'] ) {
@@ -609,6 +572,7 @@ function additional_privacy() {
     }
     $file_value = hash_hmac('md5', "{$blog_id} file access yes", LOGGED_IN_SALT);
     setcookie( "spo_{$blog_id}_fa", $file_value, time() + 1800, $current_blog->path);
+    ob_end_flush(); // Flushed Output Buffer
 }
 
 function additional_privacy_set_default($blog_id, $user_id) {
@@ -667,53 +631,48 @@ function additional_privacy_deny_message( $privacy ) {
     if ( ! $continue )
         return;
 
-	header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate');
-	header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); // Date in the past
-	header('Pragma: no-cache');
-	?>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title><?php _e('Site Access Denied', 'sitewide-privacy-options'); ?></title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate');
+    header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); // Date in the past
+    header('Pragma: no-cache');
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title><?php _e('Site Access Denied', 'sitewide-privacy-options'); ?></title>
+        <style media="screen" type="text/css">
+        html { background: #f1f1f1; }
 
-		<style media="screen" type="text/css">
-		html { background: #f1f1f1; }
+        body {
+            background: #fff;
+            color: #333;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+            margin: 2em auto 0 auto;
+            width: 700px;
+            padding: 1em 2em;
+            border-radius: 12px;
+        }
 
-		body {
-			background: #fff;
-			color: #333;
-			font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
-			margin: 2em auto 0 auto;
-			width: 700px;
-			padding: 1em 2em;
-			-moz-border-radius: 12px;
-			-khtml-border-radius: 12px;
-			-webkit-border-radius: 12px;
-			border-radius: 12px;
-		}
+        a { color: #2583ad; text-decoration: none; }
 
-		a { color: #2583ad; text-decoration: none; }
+        a:hover { color: #d54e21; }
 
-		a:hover { color: #d54e21; }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
 
+        h2 { font-size: 16px; }
 
-		h1 {
-			font-size: 18px;
-			margin-bottom: 0;
-		}
-
-		h2 { font-size: 16px; }
-
-		p, li {
-			padding-bottom: 2px;
-			font-size: 13px;
-			line-height: 18px;
-		}
-		</style>
-	</head>
-	<body>
-	<h2><?php _e('Site Access Denied', 'sitewide-privacy-options'); ?></h2>
+        p, li {
+            padding-bottom: 2px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        </style>
+    </head>
+    <body>
+    <h2><?php _e('Site Access Denied', 'sitewide-privacy-options'); ?></h2>
     <?php
     if ( $privacy == '2' ) {
         $msg = __( 'This site may only be viewed by users who are subscribed to this site.', 'sitewide-privacy-options' );
@@ -722,12 +681,12 @@ function additional_privacy_deny_message( $privacy ) {
     }
     ?>
     <p>
-        <?php echo apply_filters( 'additional_privacy_deny_message', $msg )?>
+    <?php echo apply_filters( 'additional_privacy_deny_message', $msg )?>
     </p>
     </body>
     </html>
-	<?php
-	exit();
+    <?php
+    exit();
 }
 
 function additional_privacy_is_pro() {
@@ -787,7 +746,7 @@ function additional_privacy_blog_options() {
 
     <script type="text/javascript">
         jQuery( document ).ready( function() {
-            jQuery( "input[name='blog_public']" ).change( function() {
+            jQuery( "input[name='blog_public']" ).on('change', function() {
                 if ( '-4' == jQuery( this ).val() )
                     jQuery( "#blog_pass" ).attr( "readonly", false );
                 else
@@ -934,19 +893,8 @@ function additional_privacy_site_admin_options() {
 		<?php _e('Updates all sites with the default privacy setting. The main site is not updated. Please be patient as this can take a few minutes.', 'sitewide-privacy-options') ?>
 	    </td>
 	</tr>
-        <?php } ?>
+<?php } ?>
     </table>
-    <?php
+<?php
 }
-
-/* Update Notifications Notice */
-if ( !function_exists( 'wdp_un_check' ) ) {
-    function wdp_un_check() {
-        if ( !class_exists('WPMUDEV_Update_Notifications') && current_user_can('edit_users') )
-            echo '<div class="error fade"><p>' . __('Please install the latest version of <a href="http://premium.wpmudev.org/project/update-notifications/" title="Download Now &raquo;">our free Update Notifications plugin</a> which helps you stay up-to-date with the most stable, secure versions of WPMU DEV themes and plugins. <a href="http://premium.wpmudev.org/wpmu-dev/update-notifications-plugin-information/">More information &raquo;</a>', 'wpmudev') . '</a></p></div>';
-    }
-    add_action( 'admin_notices', 'wdp_un_check', 5 );
-    add_action( 'network_admin_notices', 'wdp_un_check', 5 );
-}
-
 ?>
