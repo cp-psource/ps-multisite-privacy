@@ -5,7 +5,6 @@
   <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
   <a href="https://cp-psource.github.io/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a>
-  <a href="https://cp-psource.github.io/ps-multisite-privacy/psource-de.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">DEUTSCH</a> 
 </div>
 
 ## PSOURCE is a collection of plugins and themes for ClassicPress that are free to use. There are no premium features, subscription costs, or similar. Everything is completely free to use in its full extent. The community is invited to contribute and further develop their favorites.
@@ -32,6 +31,7 @@ Conclusion Thank you for visiting PSOURCE. We hope that our products are useful 
 | CP Community | ![CP Community](psource/cpc_logo.png) | Dies ist das ultimative Plugin für soziale Netzwerke für ClassicPress. Du kannst auf Deiner ClassicPress-Webseite Dein eigenes soziales Netzwerk erstellen. | [MEHR..](https://cp-psource.github.io/cp-community/) |
 | Plugin 2 | ![Plugin 2](link-zum-bild.jpg) | Kurzbeschreibung des Plugins 2. | [MEHR..](https://example.com/plugin-2) |
 
+
 <div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
   <a href="https://cp-psource.github.io/ps-multisite-privacy/" style="text-decoration: none; color: #0366d6; font-weight: bold;">Home</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/releases" style="text-decoration: none; color: #0366d6; font-weight: bold;">Downloads</a>
@@ -39,7 +39,6 @@ Conclusion Thank you for visiting PSOURCE. We hope that our products are useful 
   <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
   <a href="https://cp-psource.github.io/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a>
-  <a href="https://cp-psource.github.io/ps-multisite-privacy/psource-de.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">DEUTSCH</a> 
 </div>
 
 <div>
