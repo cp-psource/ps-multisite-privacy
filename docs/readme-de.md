@@ -23,39 +23,43 @@ Dieses Plugin gibt Dir die volle Kontrolle über die Privatsphäre in Deinem Net
 *   Problemlose Benutzeroberfläche.  Das Ändern der Privatsphäre in Deinem Netzwerk ist so einfach wie das Aktualisieren Deiner         Einstellungen im Netzwerkadministrator-Dashboard.
 *   Möglichkeit, Benutzern bei der Anmeldung für ihre neue Webseite die Auswahl ihrer bevorzugten Datenschutzoption zu ermöglichen.
 *   Kontrolliere die Standard-Datenschutzeinstellungen aller neuen Webseiten, die in Deinem Netzwerk erstellt werden.
-*   Easily update the privacy settings of all site across your entire network at the same time!
-*   Control users ability to override default privacy settings
-*   Works perfectly with Multisite and BuddyPress.
-*   Use this plugin on any WordPress project you like.
+*   Aktualisiere ganz einfach die Datenschutzeinstellungen aller Webseiten in Deinem gesamten Netzwerk gleichzeitig!
+*   Kontrolliere die Möglichkeit der Benutzer, die standardmäßigen Datenschutzeinstellungen zu überschreiben
+*   Funktioniert perfekt mit Multisite und BuddyPress.
+*   Verwende dieses Plugin für jedes Multisite-Projekt.
 
-##### Here's your four new privacy options:
+##### Hier sind Deine vier neuen Datenschutzoptionen:
 
-1.  Allow any registered users on the network to view site.
-2.  Allow only subscribers or users of the site to view it.
-3.  Allow access to only administrators of the site - great for testing purposes.
-4.  Require a single password to access the site - allowing only those you want to view the site but without the need for them to have a user account!
+1.  Erlaube allen registrierten Benutzern im Netzwerk, die Webseite anzuzeigen.
+2.  Erlaube nur Abonnenten oder Benutzern der Webseite, sie anzuzeigen.
+3.  Erlaube nur den Administratoren der Webseite den Zugriff – ideal für Testzwecke.
+4.  Für den Zugriff auf die Webseite ist ein Passwort erforderlich. So können nur die Personen auf die Webseite zugreifen, die Du möchtest, ohne dass diese über ein Benutzerkonto verfügen müssen!
 
-### Smart settings
+### Intelligente Einstellungen
 
-Toggle options in the admin dashboard for quick setup. 
+Zur schnellen Einrichtung kannst Du die Optionen im Administrator-Dashboard umschalten. 
 
 ![network-privacy-2](images/network-privacy-2.png)
 
- Easy privacy configuration
+ Einfache Datenschutzkonfiguration
 
-   Multisite Privacy gives you more control without the hassle of setting up a full [membership](https://cp-psource.github.io/mitgliedschaften-pro/) plugin.
+   Multisite Privacy gibt Dir mehr Kontrolle ohne den Aufwand eines vollständigen [Mitgliedschaften](https://cp-psource.github.io/mitgliedschaften-pro/) Plugins.
 
-## Usage
+## Verwendung
 
-![network-privacy](images/network-privacy.png "Privacy settings in Settings in the network admin dashboard")
+![network-privacy](images/network-privacy.png) 
 
-#### Show Privacy options at sign up
+ Datenschutzeinstellungen in den Einstellungen im Netzwerkadministrator-Dashboard
 
-Show Privacy option at sign up is displayed when either 'Logged in users may register new sites' or 'Both sites and user accounts can be registered' is selected under Registration Settings in **Settings  > Network Settings** in the network admin dashboard. When 'Yes' is selected users are able to set their preferred privacy options as their site is created. Here's what the privacy options look like on the sign up page when 'Yes' is selected: 
+#### Datenschutzoptionen bei der Anmeldung anzeigen
 
-![image](images/privacy62.jpg "Selecting privacy when signing up for a new site")
+Die Option „Datenschutz bei Anmeldung anzeigen“ wird angezeigt, wenn unter den Registrierungseinstellungen in **Einstellungen  > Netzwerkeinstellungen** im Netzwerkadministrator-Dashboard entweder **Angemeldete Benutzer können neue Sites registrieren** oder **Sowohl Webseiten als auch Benutzerkonten können registriert werden** ausgewählt ist. Wenn **Ja** ausgewählt ist, können Benutzer beim Erstellen ihrer Webseite ihre bevorzugten Datenschutzoptionen festlegen. So sehen die Datenschutzoptionen auf der Anmeldeseite aus, wenn **JA** ausgewählt ist: 
 
-#### Available Options
+![image](images/privacy62.jpg) 
+
+ Auswählen des Datenschutzes bei der Anmeldung für eine neue Webseite
+
+#### Verfügbare Optionen
 
 Available options allows the Super admin user to control which of the privacy options are displayed in **Settings > Reading** in the site admin dashboard. Here's what the privacy options look like when all are selected in network settings: 
 
