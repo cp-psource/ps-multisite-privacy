@@ -25,12 +25,12 @@ Support If you have any questions or issues with any of our products, you can co
 
 Conclusion Thank you for visiting PSOURCE. We hope that our products are useful to you, and we look forward to welcoming you to the community.
 
-## Weitere empfohlene Plugins
+## Popular PSOURCE
 
 | Plugin | Bild | Beschreibung | Link |
 |--------|------|--------------|------|
-| CP Community | ![CP Community](psource/cpc_logo.png) | Dies ist das ultimative Plugin für soziale Netzwerke für ClassicPress. Du kannst auf Deiner ClassicPress-Webseite Dein eigenes soziales Netzwerk erstellen. | [MEHR..](https://cp-psource.github.io/cp-community/) |
-| Plugin 2 | ![Plugin 2](link-zum-bild.jpg) | Kurzbeschreibung des Plugins 2. | [MEHR..](https://example.com/plugin-2) |
+| CP Community | ![CP Community](psource/cpc_logo.png) | This is the ultimate social network plugin for ClassicPress. You can create your own social network on your ClassicPress website. | [MORE...](https://cp-psource.github.io/cp-community/) |
+| PS BeitragsAds | ![PS BeitragsAds](psource/ipa.png) | Definiere und platziere benutzerdefinierte Werbeanzeigen für Beitragstypen und mehr, das einfachste Werkzeug um effektiv Werbeanzeigen zu schalten. | [MORE...](https://cp-psource.github.io/ps-post-ads/) |
 
 <div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
   <a href="https://cp-psource.github.io/ps-multisite-privacy/" style="text-decoration: none; color: #0366d6; font-weight: bold;">Home</a>

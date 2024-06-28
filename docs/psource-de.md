@@ -7,29 +7,33 @@
   <a href="https://cp-psource.github.io/ps-multisite-privacy/psource.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">PSOURCE</a>
 </div>
 
-## PSOURCE is a collection of plugins and themes for ClassicPress that are free to use. There are no premium features, subscription costs, or similar. Everything is completely free to use in its full extent. The community is invited to contribute and further develop their favorites.
+## PSOURCE ist eine Sammlung von Plugins und Themes für ClassicPress, die kostenlos nutzbar sind. Es gibt keine Premium-Features, Abo-Kosten oder ähnliches. Alles ist komplett kostenlos in vollem Umfang nutzbar. Die Community ist eingeladen, zu ihren Favoriten beizutragen und diese gemeinsam weiterzuentwickeln
 
+Wir haben eine große Auswahl an Plugins und Themes für ClassicPress. Insbesondere sind viele unserer Plugins/Themes für den Einsatz in einer Multisite-Umgebung und für den professionellen Einsatz konzipiert.
 
-Products We have a wide range of plugins and themes for ClassicPress. Specifically, many of our products are designed for use in a multisite environment and for professional use. Here's an overview of our products:
+Erkunde unser Repository und probiere unsere Plugins/Themes aus.
 
-Feel free to explore our repository and try out our products.
+Wir laden die Community ein, an der Entwicklung unserer Plugins/Themes teilzunehmen. Wenn Du eine Idee für ein neues Plugin oder Theme oder Vorschläge zur Verbesserung bestehender Projekte hast, freuen wir uns über Deine Beiträge. Hier sind einige Möglichkeiten, wie Du beitragen kannst:
 
-Contribute We invite the community to participate in the development of our products. If you have an idea for a new plugin or theme or suggestions for improving existing products, we welcome your contributions. Here are some ways you can contribute:
+* Erstelle ein ISSUE, um einen Fehler zu melden oder eine Funktion vorzuschlagen. 
+* Erstelle eine Pull-Anfrage, um Code beizutragen. 
+* Diskutiere im Forum oder auf unserer Homepage. 
 
-Create an issue to report a bug or suggest a feature. Create a pull request to contribute code. Discuss in the forum or on our homepage. We look forward to hearing from you and seeing your contributions.
+Wir freuen uns darauf, von Dir zu hören und Deine Beiträge zu sehen.
 
-License All of our products are licensed under the GPLv2 license. This means you are free to use, modify, and distribute them. We are happy for you to use our products in your own projects.
+Alle unsere Plugins/Themes sind unter der GPLv2-Lizenz lizenziert. Dies bedeutet, dass Du sie frei verwenden, ändern und verteilen kannst. Wir freuen uns, wenn Du unsere Plugins/Themes in Deinen eigenen Projekten verwendest.
 
-Support If you have any questions or issues with any of our products, you can contact us through the forum or on our homepage. We are happy to help.
+Wenn Sie Fragen oder Probleme mit einem unserer Plugins/Themes hast, kannst Du uns über das Forum oder auf unserer Homepage kontaktieren. Wir helfen Dir gerne.
 
-Conclusion Thank you for visiting PSOURCE. We hope that our products are useful to you, and we look forward to welcoming you to the community.
+Vielen Dank für Deinen Besuch bei PSOURCE. Wir hoffen, dass unsere Plugins/Themes für Dich nützlich sind und freuen uns, Dich in der Community begrüßen zu dürfen.
 
-## Weitere empfohlene Plugins
+## Beliebte PSOURCE
 
 | Plugin | Bild | Beschreibung | Link |
 |--------|------|--------------|------|
-| CP Community | ![CP Community](psource/cpc_logo.png) | Dies ist das ultimative Plugin für soziale Netzwerke für ClassicPress. Du kannst auf Deiner ClassicPress-Webseite Dein eigenes soziales Netzwerk erstellen. | [MEHR..](https://cp-psource.github.io/cp-community/) |
-| Plugin 2 | ![Plugin 2](link-zum-bild.jpg) | Kurzbeschreibung des Plugins 2. | [MEHR..](https://example.com/plugin-2) |
+| CP Community | ![CP Community](psource/cpc_logo.png) | Dies ist das ultimative Plugin für soziale Netzwerke für ClassicPress. Du kannst auf Deiner ClassicPress-Webseite Dein eigenes soziales Netzwerk erstellen. | [MEHR...](https://cp-psource.github.io/cp-community/) |
+| PS BeitragsAds | ![PS BeitragsAds](psource/ipa.png) | Definiere und platziere benutzerdefinierte Werbeanzeigen für Beitragstypen und mehr, das einfachste Werkzeug um effektiv Werbeanzeigen zu schalten. | [MEHR...](https://cp-psource.github.io/ps-post-ads/) |
+| Plugin 2 | ![Plugin 2](link-zum-bild.jpg) | Kurzbeschreibung des Plugins 2. | [MEHR...](https://example.com/plugin-2) |
 
 
 <div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
