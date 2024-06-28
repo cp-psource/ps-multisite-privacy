@@ -1,27 +1,28 @@
 # Multisite Privacy
 
 <div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
+
   <a href="https://cp-psource.github.io/ps-multisite-privacy/" style="text-decoration: none; color: #0366d6; font-weight: bold;">Home</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/releases" style="text-decoration: none; color: #0366d6; font-weight: bold;">Downloads</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/wiki" style="text-decoration: none; color: #0366d6; font-weight: bold;">Docs</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
-  <a href="https://cp-psource.github.io/ps-multisite-privacy/readme-de.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">DEUTSCH</a> 
+  
 </div>
 
-## Multisite Privacy adds network wide privacy levels and allows you to decide whether users can override them.
+## Multisite Privacy fügt netzwerkweite Datenschutzebenen hinzu und ermöglicht Dir zu entscheiden, ob Benutzer diese außer Kraft setzen können.
 
-### More levels, greater control
+### Mehr Ebenen, mehr Kontrolle
 
-This plugin gives you full control over privacy on your network.  
+Dieses Plugin gibt Dir die volle Kontrolle über die Privatsphäre in Deinem Netzwerk.  
 
-##### It’s everything you'll need, plus a whole lot more:
+##### Es enthält alles, was Du brauchst, und noch viel mehr:
 
-*   Adds four new privacy options to Settings > Privacy in the site admin dashboard.
-*   Choice of which privacy options are made available to your users!
-*   Hassle free interface.  Changing privacy across your network is as simple as updating your settings in the network admin dashboard.
-*   Ability to let users select their preferred privacy option when signing up for their new site.
-*   Control the default privacy setting of all new sites created on your network.
+*   Fügt zu **Einstellungen > Lesen**“** im Webseiten-Admin-Dashboard vier neue Datenschutzoptionen hinzu.
+*   Wähle aus, welche Datenschutzoptionen Deinen Benutzern zur Verfügung gestellt werden!
+*   Problemlose Benutzeroberfläche.  Das Ändern der Privatsphäre in Deinem Netzwerk ist so einfach wie das Aktualisieren Deiner         Einstellungen im Netzwerkadministrator-Dashboard.
+*   Möglichkeit, Benutzern bei der Anmeldung für ihre neue Webseite die Auswahl ihrer bevorzugten Datenschutzoption zu ermöglichen.
+*   Kontrolliere die Standard-Datenschutzeinstellungen aller neuen Webseiten, die in Deinem Netzwerk erstellt werden.
 *   Easily update the privacy settings of all site across your entire network at the same time!
 *   Control users ability to override default privacy settings
 *   Works perfectly with Multisite and BuddyPress.
