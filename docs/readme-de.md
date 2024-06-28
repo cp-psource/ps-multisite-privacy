@@ -1,13 +1,11 @@
 # Multisite Privacy
 
 <div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
-
   <a href="https://cp-psource.github.io/ps-multisite-privacy/" style="text-decoration: none; color: #0366d6; font-weight: bold;">Home</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/releases" style="text-decoration: none; color: #0366d6; font-weight: bold;">Downloads</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/wiki" style="text-decoration: none; color: #0366d6; font-weight: bold;">Docs</a>
   <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
-  <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
-  
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a> 
 </div>
 
 ## Multisite Privacy fügt netzwerkweite Datenschutzebenen hinzu und ermöglicht Dir zu entscheiden, ob Benutzer diese außer Kraft setzen können.
@@ -18,22 +16,22 @@ Dieses Plugin gibt Dir die volle Kontrolle über die Privatsphäre in Deinem Net
 
 ##### Es enthält alles, was Du brauchst, und noch viel mehr:
 
-*   Fügt zu **Einstellungen > Lesen**“** im Webseiten-Admin-Dashboard vier neue Datenschutzoptionen hinzu.
-*   Wähle aus, welche Datenschutzoptionen Deinen Benutzern zur Verfügung gestellt werden!
-*   Problemlose Benutzeroberfläche.  Das Ändern der Privatsphäre in Deinem Netzwerk ist so einfach wie das Aktualisieren Deiner         Einstellungen im Netzwerkadministrator-Dashboard.
-*   Möglichkeit, Benutzern bei der Anmeldung für ihre neue Webseite die Auswahl ihrer bevorzugten Datenschutzoption zu ermöglichen.
-*   Kontrolliere die Standard-Datenschutzeinstellungen aller neuen Webseiten, die in Deinem Netzwerk erstellt werden.
-*   Aktualisiere ganz einfach die Datenschutzeinstellungen aller Webseiten in Deinem gesamten Netzwerk gleichzeitig!
-*   Kontrolliere die Möglichkeit der Benutzer, die standardmäßigen Datenschutzeinstellungen zu überschreiben
-*   Funktioniert perfekt mit Multisite und BuddyPress.
-*   Verwende dieses Plugin für jedes Multisite-Projekt.
+* Fügt zu **Einstellungen > Lesen**“** im Webseiten-Admin-Dashboard vier neue Datenschutzoptionen hinzu.
+* Wähle aus, welche Datenschutzoptionen Deinen Benutzern zur Verfügung gestellt werden!
+* Problemlose Benutzeroberfläche.  Das Ändern der Privatsphäre in Deinem Netzwerk ist so einfach wie das Aktualisieren Deiner         Einstellungen im Netzwerkadministrator-Dashboard.
+* Möglichkeit, Benutzern bei der Anmeldung für ihre neue Webseite die Auswahl ihrer bevorzugten Datenschutzoption zu ermöglichen.
+* Kontrolliere die Standard-Datenschutzeinstellungen aller neuen Webseiten, die in Deinem Netzwerk erstellt werden.
+* Aktualisiere ganz einfach die Datenschutzeinstellungen aller Webseiten in Deinem gesamten Netzwerk gleichzeitig!
+* Kontrolliere die Möglichkeit der Benutzer, die standardmäßigen Datenschutzeinstellungen zu überschreiben
+* Funktioniert perfekt mit Multisite und BuddyPress.
+* Verwende dieses Plugin für jedes Multisite-Projekt.
 
 ##### Hier sind Deine vier neuen Datenschutzoptionen:
 
-1.  Erlaube allen registrierten Benutzern im Netzwerk, die Webseite anzuzeigen.
-2.  Erlaube nur Abonnenten oder Benutzern der Webseite, sie anzuzeigen.
-3.  Erlaube nur den Administratoren der Webseite den Zugriff – ideal für Testzwecke.
-4.  Für den Zugriff auf die Webseite ist ein Passwort erforderlich. So können nur die Personen auf die Webseite zugreifen, die Du möchtest, ohne dass diese über ein Benutzerkonto verfügen müssen!
+1. Erlaube allen registrierten Benutzern im Netzwerk, die Webseite anzuzeigen.
+2. Erlaube nur Abonnenten oder Benutzern der Webseite, sie anzuzeigen.
+3. Erlaube nur den Administratoren der Webseite den Zugriff – ideal für Testzwecke.
+4. Für den Zugriff auf die Webseite ist ein Passwort erforderlich. So können nur die Personen auf die Webseite zugreifen, die Du möchtest, ohne dass diese über ein Benutzerkonto verfügen müssen!
 
 ### Intelligente Einstellungen
 
@@ -61,34 +59,43 @@ Die Option „Datenschutz bei Anmeldung anzeigen“ wird angezeigt, wenn unter d
 
 #### Verfügbare Optionen
 
-Available options allows the Super admin user to control which of the privacy options are displayed in **Settings > Reading** in the site admin dashboard. Here's what the privacy options look like when all are selected in network settings: 
+Mit den verfügbaren Optionen kann der Superadministrator steuern, welche Datenschutzoptionen unter **Einstellungen > Lesen** im Webseiten-Admin-Dashboard angezeigt werden. So sehen die Datenschutzoptionen aus, wenn alle in den Netzwerkeinstellungen ausgewählt sind:
 
-![network-privacy-2](images/network-privacy-2.png "Privacy options in Privacy in the site admin dashboard")
+![network-privacy-2](images/network-privacy-2.png)
 
-#### Default Settings
+ Datenschutzoptionen unter „Datenschutz“ im Webseiten-Admin-Dashboard
 
-Default settings control the Privacy setting of all newly created sites. For example, if you wanted to make all newly created sites private you would choose either:
+#### Standardeinstellungen
 
-1.  **Only allow logged in users to see all blogs** - any one who is a registered user on your network, and who is logged into their account will be able to view the site.  Ideal if you want to make sites private without adding users to individual sites.
-2.  **Only allow a registered user to see a blog for which they are registered to** -  any one who is a registered user of the site and who is logged into their account will be able to view the site .i.e anyone who has been added as a user to site and is listed in Users > All Users.  Used when you want to limit access to specific people.
-3.  **Only allow administrators of a blog to view the blog for which they are an admin** -  any one who is a registered admin user of the site and who is logged into their account will be able to view the site.  Ideal for testing purpose before making a site public.
+Die Standardeinstellungen steuern die Datenschutzeinstellungen aller neu erstellten Websites. Wenn Du beispielsweise alle neu erstellten Webseiten privat machen möchtest, wähle eine der folgenden Optionen:
 
-#### Allow Override
+1. **Nur angemeldeten Benutzern das Anzeigen aller Blogs erlauben** – jeder registrierte Benutzer Deines Netzwerks, der bei seinem Konto angemeldet ist, kann die Webseite anzeigen.  Ideal, wenn Du Webseiiten privat machen möchtest, ohne einzelnen Webseiten Benutzer hinzuzufügen.
+2. **Erlaube registrierten Benutzern nur, die Blogs anzuzeigen, für die sie registriert sind.** – Jeder registrierte Benutzer der Webseite, der bei seinem Konto angemeldet ist, kann die Webseite anzeigen, d.h. jeder, der als Benutzer zur Webseite hinzugefügt wurde und unter **Benutzer > Alle Benutzer** aufgeführt ist. Wird verwendet, wenn Du den Zugriff auf bestimmte Personen beschränken möchtest.
+3. **Erlaube nur Administratoren eines Blogs, das Blog anzuzeigen, für das sie Administrator sind.** – Jeder registrierte Administratorbenutzer der Webseite, der bei seinem Konto angemeldet ist, kann die Webseite anzeigen. Ideal für Testzwecke, bevor eine Webseite öffentlich gemacht wird.
 
-Allow Override lets you decide if blog admin users are able to change privacy options in Settings > Reading. For example, you would select 'No' if you needed to keep all sites private.
+#### Überschreiben zulassen
 
-#### Update All Sites
+Mit **Außerkraftsetzen** kannst Du festlegen, ob Blog-Administratoren die Datenschutzeinstellungen unter **Einstellungen > Lesen** ändern können. Du würdest beispielsweise **Nein** auswählen, wenn Du alle Webseiten privat halten möchtest.
 
-Update all Sites is designed to update the privacy settings on all sites across your network. For example, you would use Update all Sites if your default setting was 'Allow all visitors to all blogs' and you needed to make all sites private quickly.
+#### Alle Webseiten aktualisieren
 
-### Please Note:
+**Alle Webseiten aktualisieren** dient zum Aktualisieren der Datenschutzeinstellungen auf allen Webseiten in Deinem Netzwerk. Du würdest **Alle Webseiten aktualisieren** beispielsweise verwenden, wenn Deine Standardeinstellung **Alle Blogs allen Besuchern erlauben** lautet und Du alle Webseiten schnell privat machen musst.
 
-1.  Select ‘Update All Sites’ to update existing blogs and apply to all new ones being created.
-2.  Don’t select ‘Update All Blogs’ if you only want new privacy defaults to apply to all new sites being created.
-3.  Update All Sites does not update the Privacy Settings of the main site.  This is because it is common to make the main site 'Allow all visitors to all blogs' so you can provide community support and help on the main site.  To change the Privacy setting of the main site you need to go to Settings > Reading in the site admin dashboard of the main site.
+### Bitte beachte:
 
-### Changing Privacy Settings on a site by site basis
+1. Wähle **Alle Webseiten aktualisieren** aus, um vorhandene Blogs zu aktualisieren und die Aktualisierung auf alle neu erstellten Blogs anzuwenden.
+2. Wähle **Alle Blogs aktualisieren** nicht aus, wenn die neuen Datenschutzstandards nur für alle neu erstellten Webseiten gelten sollen.
+3. **Alle Webseiten aktualisieren** aktualisiert nicht die Datenschutzeinstellungen der Hauptseite.  Das liegt daran, dass auf der Hauptseite häufig die Einstellung **Allen Besuchern Zugriff auf alle Blogs erlauben** vorgenommen wird, damit Du auf der Hauptseite Community-Support und Hilfe anbieten kannst. Um die Datenschutzeinstellungen der Hauptseite zu ändern, musst Du im Webseiten-Admin-Dashboard der Hauptseite zu **Einstellungen > Lesen** gehen.
 
-You can change the privacy of a site by: 1.  Logging into the site admin dashboard of the site 2.  Go to **Settings > Reading** 3.  Select your new privacy setting. 4.  Click **Save Changes**. 
+### Ändern der Datenschutzeinstellungen für einzelne Webseiten
 
-![image](images/privacy64.jpg "Changing privacy in the site admin dashboard")
+Du kannst die Datenschutzeinstellungen einer Webseite wie folgt ändern:
+
+1. Melde Dich beim Webseiten-Admin-Dashboard der Webseite an. 
+2. Gehe zu **Einstellungen > Lesen**. 
+3. Wähle Deine neue Datenschutzeinstellung. 
+4. Klicke auf **Änderungen speichern**.
+
+![image](images/privacy64.jpg)
+
+ Ändern der Privatsphäre im Webseiten-Admin-Dashboard
