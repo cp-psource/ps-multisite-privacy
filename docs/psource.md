@@ -20,5 +20,5 @@ Conclusion Thank you for visiting PSOURCE. We hope that our products are useful 
 
 | Plugin | Bild | Beschreibung | Link |
 |--------|------|--------------|------|
-| CP Community | ![CP Community](psource/link-zum-bild.jpg) | Dies ist das ultimative Plugin für soziale Netzwerke für ClassicPress. Du kannst auf Deiner ClassicPress-Webseite Dein eigenes soziales Netzwerk erstellen. | [Link](https://cp-psource.github.io/cp-community/) |
-| Plugin 2 | ![Plugin 2](link-zum-bild.jpg) | Kurzbeschreibung des Plugins 2. | [Link zum Plugin 2](https://example.com/plugin-2) |
+| CP Community | ![CP Community](psource/cpc_logo.png) | Dies ist das ultimative Plugin für soziale Netzwerke für ClassicPress. Du kannst auf Deiner ClassicPress-Webseite Dein eigenes soziales Netzwerk erstellen. | [MEHR..](https://cp-psource.github.io/cp-community/) |
+| Plugin 2 | ![Plugin 2](link-zum-bild.jpg) | Kurzbeschreibung des Plugins 2. | [MEHR..](https://example.com/plugin-2) |
