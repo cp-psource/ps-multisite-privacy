@@ -51,7 +51,7 @@ Zur schnellen Einrichtung kannst Du die Optionen im Administrator-Dashboard umsc
 
 #### Datenschutzoptionen bei der Anmeldung anzeigen
 
-Die Option „Datenschutz bei Anmeldung anzeigen“ wird angezeigt, wenn unter den Registrierungseinstellungen in **Einstellungen  > Netzwerkeinstellungen** im Netzwerkadministrator-Dashboard entweder **Angemeldete Benutzer können neue Sites registrieren** oder **Sowohl Webseiten als auch Benutzerkonten können registriert werden** ausgewählt ist. Wenn **Ja** ausgewählt ist, können Benutzer beim Erstellen ihrer Webseite ihre bevorzugten Datenschutzoptionen festlegen. So sehen die Datenschutzoptionen auf der Anmeldeseite aus, wenn **JA** ausgewählt ist: 
+Die Option **Datenschutz bei Anmeldung anzeigen** wird angezeigt, wenn unter den Registrierungseinstellungen in **Einstellungen  > Netzwerkeinstellungen** im Netzwerkadministrator-Dashboard entweder **Angemeldete Benutzer können neue Sites registrieren** oder **Sowohl Webseiten als auch Benutzerkonten können registriert werden** ausgewählt ist. Wenn **Ja** ausgewählt ist, können Benutzer beim Erstellen ihrer Webseite ihre bevorzugten Datenschutzoptionen festlegen. So sehen die Datenschutzoptionen auf der Anmeldeseite aus, wenn **JA** ausgewählt ist: 
 
 ![image](images/privacy62.jpg) 
 
