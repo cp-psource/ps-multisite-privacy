@@ -46,19 +46,25 @@ Toggle options in the admin dashboard for quick setup.
 
 ## Usage
 
-![network-privacy](images/network-privacy.png "Privacy settings in Settings in the network admin dashboard")
+![network-privacy](images/network-privacy.png)
+
+ Privacy settings in Settings in the network admin dashboard
 
 #### Show Privacy options at sign up
 
 Show Privacy option at sign up is displayed when either 'Logged in users may register new sites' or 'Both sites and user accounts can be registered' is selected under Registration Settings in **Settings  > Network Settings** in the network admin dashboard. When 'Yes' is selected users are able to set their preferred privacy options as their site is created. Here's what the privacy options look like on the sign up page when 'Yes' is selected: 
 
-![image](images/privacy62.jpg "Selecting privacy when signing up for a new site")
+![image](images/privacy62.jpg)
+
+ Selecting privacy when signing up for a new site
 
 #### Available Options
 
 Available options allows the Super admin user to control which of the privacy options are displayed in **Settings > Reading** in the site admin dashboard. Here's what the privacy options look like when all are selected in network settings: 
 
-![network-privacy-2](images/network-privacy-2.png "Privacy options in Privacy in the site admin dashboard")
+![network-privacy-2](images/network-privacy-2.png)
+
+ Privacy options in Privacy in the site admin dashboard
 
 #### Default Settings
 
@@ -84,6 +90,25 @@ Update all Sites is designed to update the privacy settings on all sites across 
 
 ### Changing Privacy Settings on a site by site basis
 
-You can change the privacy of a site by: 1.  Logging into the site admin dashboard of the site 2.  Go to **Settings > Reading** 3.  Select your new privacy setting. 4.  Click **Save Changes**. 
+You can change the privacy of a site by: 
+1. Logging into the site admin dashboard of the site 
+2. Go to **Settings > Reading** 
+3. Select your new privacy setting. 
+4. Click **Save Changes**. 
 
-![image](images/privacy64.jpg "Changing privacy in the site admin dashboard")
+![image](images/privacy64.jpg)
+
+ Changing privacy in the site admin dashboard
+
+<div style="display: flex; justify-content: space-around; background-color: #f3f3f3; padding: 10px; border-radius: 5px;">
+  <a href="https://cp-psource.github.io/ps-multisite-privacy/" style="text-decoration: none; color: #0366d6; font-weight: bold;">Home</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/releases" style="text-decoration: none; color: #0366d6; font-weight: bold;">Downloads</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/wiki" style="text-decoration: none; color: #0366d6; font-weight: bold;">Docs</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="text-decoration: none; color: #0366d6; font-weight: bold;">Support</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/issues" style="text-decoration: none; color: #0366d6; font-weight: bold;">Bug Report</a>
+  <a href="https://cp-psource.github.io/ps-multisite-privacy/readme-de.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">DEUTSCH</a> 
+</div>
+
+<div>
+ <a href="https://github.com/cp-psource">Copyright PSOURCE 2024</a>
+</div>
