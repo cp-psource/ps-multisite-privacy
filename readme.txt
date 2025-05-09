@@ -2,8 +2,8 @@
 Contributors: DerN3rd (PSOURCE)
 Tags: multisite, suche, netzwerksuche
 Requires at least: 4.9
-Tested up to: 4.9
-Stable tag: 1.2.2
+Tested up to: 6.8.1
+Stable tag: 1.2.3
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -138,7 +138,7 @@ Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.wo
 
 == ChangeLog ==
 
-= 1.2.2 =
+= 1.2.3 =
 
 * Fix: PhP8.3 Issues
 * Fix: Deprecated query
