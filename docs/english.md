@@ -1,13 +1,13 @@
 ---
 layout: psource-theme
-title: "Multisite Privacy"
+title: "PS Multisite Privatsphäre"
 ---
 
-<h2 align="center" style="color:#38c2bb;">📚 Multisite Privacy</h2>
+<h2 align="center" style="color:#38c2bb;">📚 PS Multisite Privatsphäre</h2>
 
 <div class="menu">
-  <a href="https://github.com/cp-psource/events-and-bookings/discussions" style="color:#38c2bb;">💬 Forum</a>
-  <a href="https://github.com/cp-psource/events-and-bookings/releases" style="color:#38c2bb;">⬇️ Download</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/discussions" style="color:#38c2bb;">💬 Forum</a>
+  <a href="https://github.com/cp-psource/ps-multisite-privacy/releases" style="color:#38c2bb;">⬇️ Download</a>
 </div>
 
 ## Multisite Privacy adds network wide privacy levels and allows you to decide whether users can override them.
